@@ -11,7 +11,7 @@ import java.util.List;
 @RequestMapping("/api")
 public class TaskController {
     @Autowired
-    private TaskService taskService;
+    private final TaskService taskService;
 
     public TaskController(TaskService taskService) {
         this.taskService = taskService;
@@ -30,6 +30,11 @@ public class TaskController {
     @GetMapping("/task/{id}")
     public Task get(@PathVariable int id) {
         return taskService.getTask(id);
+    }
+
+    @PostMapping("/task/{id}")
+    public Task update(@PathVariable int id, @RequestBody Task task) {
+        return taskService.updateTask(id, task);
     }
 
     @DeleteMapping("/task/{id}")

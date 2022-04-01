@@ -82,7 +82,7 @@ export default function SimpleTable() {
             <TableHead>
               <TableRow>
               	<TableCell align="center">No.</TableCell>
-                <TableCell align="center">Taskname</TableCell>
+                <TableCell align="center">Task Name</TableCell>
                 <TableCell align="center">Status</TableCell>
                 <TableCell align="center">Due Date</TableCell>
               </TableRow>

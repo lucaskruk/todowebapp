@@ -67,7 +67,7 @@ export default function AddTask(){
     	});
     	let body = await response.json();
     	//console.log(body.id);
-    	setMessage(body.id ? "Data successfully updated" : "Data updation failed");
+    	setMessage(body.id ? "Data successfully updated" : "Data update failed");
     }
 
     const handleSubmit = variables => {
