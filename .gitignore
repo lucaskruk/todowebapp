@@ -19,3 +19,6 @@ build/tmp/bootJar/MANIFEST.MF
 build/tmp/jar/MANIFEST.MF
 build/tmp/compileJava/previous-compilation-data.bin
 build/tmp/compileTestJava/previous-compilation-data.bin
+/.gradle/
+/.idea/
+
